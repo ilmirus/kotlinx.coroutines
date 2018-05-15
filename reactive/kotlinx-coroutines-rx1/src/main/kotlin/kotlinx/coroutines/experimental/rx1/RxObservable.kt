@@ -22,7 +22,7 @@ import kotlinx.coroutines.experimental.channels.*
 import kotlinx.coroutines.experimental.selects.*
 import kotlinx.coroutines.experimental.sync.*
 import rx.*
-import kotlin.coroutines.experimental.*
+import kotlin.coroutines.*
 
 /**
  * Creates cold [Observable] that runs a given [block] in a coroutine.

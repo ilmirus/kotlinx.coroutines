@@ -23,7 +23,7 @@ import kotlinx.coroutines.experimental.Job
 import kotlinx.coroutines.experimental.channels.ReceiveChannel
 import io.reactivex.Observable
 import io.reactivex.Single
-import kotlin.coroutines.experimental.CoroutineContext
+import kotlin.coroutines.CoroutineContext
 
 /**
  * Converts this job to the hot reactive completable that signals

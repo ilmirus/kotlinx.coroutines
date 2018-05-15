@@ -17,7 +17,7 @@
 package kotlinx.coroutines.experimental
 
 import kotlinx.coroutines.experimental.internal.*
-import kotlin.coroutines.experimental.*
+import kotlin.coroutines.*
 
 @Suppress("PrivatePropertyName")
 private val UNDEFINED = Symbol("UNDEFINED")

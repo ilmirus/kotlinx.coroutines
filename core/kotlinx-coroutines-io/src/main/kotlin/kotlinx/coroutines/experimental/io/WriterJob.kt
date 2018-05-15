@@ -1,7 +1,7 @@
 package kotlinx.coroutines.experimental.io
 
 import kotlinx.coroutines.experimental.*
-import kotlin.coroutines.experimental.*
+import kotlin.coroutines.*
 
 /**
  * A coroutine job that is writing to a byte channel

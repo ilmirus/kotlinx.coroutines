@@ -21,7 +21,7 @@ import io.reactivex.*
 import kotlinx.coroutines.experimental.*
 import kotlinx.coroutines.experimental.reactive.*
 import io.reactivex.schedulers.Schedulers
-import kotlin.coroutines.experimental.CoroutineContext
+import kotlin.coroutines.CoroutineContext
 
 fun rangeWithInterval(context: CoroutineContext, time: Long, start: Int, count: Int) = publish<Int>(context) {
     for (x in start until start + count) { 

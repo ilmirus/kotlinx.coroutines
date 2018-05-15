@@ -19,7 +19,7 @@
 
 package kotlinx.coroutines.experimental
 
-import kotlin.coroutines.experimental.Continuation
+import kotlin.coroutines.Continuation
 
 public expect interface CancellableContinuation<in T> : Continuation<T> {
     public val isActive: Boolean

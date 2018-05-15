@@ -25,7 +25,7 @@ import kotlinx.coroutines.experimental.selects.ALREADY_SELECTED
 import kotlinx.coroutines.experimental.selects.SelectClause2
 import kotlinx.coroutines.experimental.selects.SelectInstance
 import kotlinx.coroutines.experimental.selects.select
-import kotlin.coroutines.experimental.startCoroutine
+import kotlin.coroutines.startCoroutine
 
 /**
  * Mutual exclusion for coroutines.

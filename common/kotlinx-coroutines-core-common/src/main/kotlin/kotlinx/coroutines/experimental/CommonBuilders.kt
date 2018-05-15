@@ -16,7 +16,7 @@
 
 package kotlinx.coroutines.experimental
 
-import kotlin.coroutines.experimental.CoroutineContext
+import kotlin.coroutines.CoroutineContext
 
 @Suppress("EXPECTED_DECLARATION_WITH_DEFAULT_PARAMETER")
 public expect fun launch(

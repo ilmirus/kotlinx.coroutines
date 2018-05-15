@@ -5,8 +5,8 @@ import kotlinx.coroutines.experimental.*
 import kotlinx.coroutines.experimental.io.*
 import java.io.*
 import java.util.concurrent.locks.*
-import kotlin.coroutines.experimental.*
-import kotlin.coroutines.experimental.intrinsics.*
+import kotlin.coroutines.*
+import kotlin.coroutines.intrinsics.*
 
 /**
  * Create blocking [java.io.InputStream] for this channel that does block every time the channel suspends at read

@@ -2,8 +2,8 @@ package kotlinx.coroutines.experimental.io.internal
 
 import kotlinx.atomicfu.*
 import kotlinx.coroutines.experimental.*
-import kotlin.coroutines.experimental.*
-import kotlin.coroutines.experimental.intrinsics.*
+import kotlin.coroutines.*
+import kotlin.coroutines.intrinsics.*
 
 /**
  * Semi-cancellable reusable continuation. Unlike regular continuation this implementation has limitations:

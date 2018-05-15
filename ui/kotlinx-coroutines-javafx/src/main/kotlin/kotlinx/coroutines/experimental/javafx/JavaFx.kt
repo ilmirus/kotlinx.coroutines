@@ -28,7 +28,7 @@ import kotlinx.coroutines.experimental.*
 import kotlinx.coroutines.experimental.javafx.JavaFx.delay
 import java.util.concurrent.CopyOnWriteArrayList
 import java.util.concurrent.TimeUnit
-import kotlin.coroutines.experimental.CoroutineContext
+import kotlin.coroutines.CoroutineContext
 
 /**
  * Dispatches execution onto JavaFx application thread and provides native [delay] support.

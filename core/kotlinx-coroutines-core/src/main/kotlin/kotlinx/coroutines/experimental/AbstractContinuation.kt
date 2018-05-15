@@ -18,8 +18,8 @@ package kotlinx.coroutines.experimental
 
 import kotlinx.atomicfu.atomic
 import kotlinx.atomicfu.loop
-import kotlin.coroutines.experimental.Continuation
-import kotlin.coroutines.experimental.intrinsics.COROUTINE_SUSPENDED
+import kotlin.coroutines.Continuation
+import kotlin.coroutines.intrinsics.COROUTINE_SUSPENDED
 
 private const val UNDECIDED = 0
 private const val SUSPENDED = 1

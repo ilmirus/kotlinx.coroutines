@@ -20,7 +20,7 @@ import kotlinx.coroutines.experimental.*
 import kotlinx.coroutines.experimental.internal.*
 import kotlinx.coroutines.experimental.intrinsics.*
 import kotlinx.coroutines.experimental.selects.*
-import kotlin.coroutines.experimental.*
+import kotlin.coroutines.*
 
 /**
  * Abstract send channel. It is a base class for all send channel implementations.

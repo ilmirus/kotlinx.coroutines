@@ -17,7 +17,7 @@
 package kotlinx.coroutines.experimental.channels
 
 import kotlinx.coroutines.experimental.*
-import kotlin.coroutines.experimental.*
+import kotlin.coroutines.*
 
 internal open class ChannelCoroutine<E>(
     parentContext: CoroutineContext,

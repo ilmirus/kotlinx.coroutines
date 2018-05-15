@@ -4,7 +4,7 @@ import kotlinx.coroutines.experimental.*
 import reactor.core.Disposable
 import reactor.core.scheduler.Scheduler
 import java.util.concurrent.TimeUnit
-import kotlin.coroutines.experimental.CoroutineContext
+import kotlin.coroutines.CoroutineContext
 
 /**
  * Converts an instance of [Scheduler] to an implementation of [CoroutineDispatcher].

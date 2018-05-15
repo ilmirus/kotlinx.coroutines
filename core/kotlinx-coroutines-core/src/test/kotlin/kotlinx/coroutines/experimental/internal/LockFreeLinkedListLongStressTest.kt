@@ -21,7 +21,7 @@ import org.junit.Test
 import java.util.*
 import java.util.concurrent.atomic.AtomicInteger
 import kotlin.concurrent.thread
-import kotlin.coroutines.experimental.buildIterator
+import kotlin.coroutines.buildIterator
 
 /**
  * This stress test has 2 threads adding on one side on list, 2 more threads adding on the other,

@@ -17,8 +17,8 @@
 package kotlinx.coroutines.experimental.intrinsics
 
 import kotlinx.coroutines.experimental.*
-import kotlin.coroutines.experimental.*
-import kotlin.coroutines.experimental.intrinsics.*
+import kotlin.coroutines.*
+import kotlin.coroutines.intrinsics.*
 
 /**
  * Use this function to start coroutine in a cancellable way, so that it can be cancelled

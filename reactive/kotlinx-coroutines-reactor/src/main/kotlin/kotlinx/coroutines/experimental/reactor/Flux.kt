@@ -4,7 +4,7 @@ import kotlinx.coroutines.experimental.DefaultDispatcher
 import kotlinx.coroutines.experimental.channels.ProducerScope
 import kotlinx.coroutines.experimental.reactive.publish
 import reactor.core.publisher.Flux
-import kotlin.coroutines.experimental.CoroutineContext
+import kotlin.coroutines.CoroutineContext
 
 /**
  * Creates cold reactive [Flux] that runs a given [block] in a coroutine.

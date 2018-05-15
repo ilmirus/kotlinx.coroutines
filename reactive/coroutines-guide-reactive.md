@@ -567,7 +567,7 @@ Here is the corresponding code with coroutines:
 <!--- INCLUDE
 import kotlinx.coroutines.experimental.*
 import kotlinx.coroutines.experimental.reactive.*
-import kotlin.coroutines.experimental.CoroutineContext
+import kotlin.coroutines.CoroutineContext
 -->
 
 ```kotlin
@@ -614,7 +614,7 @@ into the single `fusedFilterMap` operator:
 import kotlinx.coroutines.experimental.*
 import kotlinx.coroutines.experimental.reactive.*
 import org.reactivestreams.Publisher
-import kotlin.coroutines.experimental.CoroutineContext
+import kotlin.coroutines.CoroutineContext
 -->
 
 ```kotlin
@@ -672,7 +672,7 @@ emits anything. However, we have [select] expression to rescue us in coroutines 
 import kotlinx.coroutines.experimental.*
 import kotlinx.coroutines.experimental.reactive.*
 import org.reactivestreams.Publisher
-import kotlin.coroutines.experimental.CoroutineContext
+import kotlin.coroutines.CoroutineContext
 import kotlinx.coroutines.experimental.selects.whileSelect
 -->
 
@@ -741,7 +741,7 @@ operator using the later approach:
 import kotlinx.coroutines.experimental.*
 import kotlinx.coroutines.experimental.reactive.*
 import org.reactivestreams.Publisher
-import kotlin.coroutines.experimental.CoroutineContext
+import kotlin.coroutines.CoroutineContext
 -->
 
 ```kotlin
@@ -810,7 +810,7 @@ And the results should be:
 ## Coroutine context
 
 All the example operators that are shown in the previous section have an explicit
-[CoroutineContext](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.coroutines.experimental/-coroutine-context/) 
+[CoroutineContext](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.coroutines/-coroutine-context/) 
 parameter. In Rx world it roughly corresponds to 
 a [Scheduler](http://reactivex.io/RxJava/2.x/javadoc/io/reactivex/Scheduler.html).
 
@@ -865,7 +865,7 @@ so the previous example is similar to the following one:
 import io.reactivex.*
 import kotlinx.coroutines.experimental.*
 import kotlinx.coroutines.experimental.reactive.*
-import kotlin.coroutines.experimental.CoroutineContext
+import kotlin.coroutines.CoroutineContext
 -->
 
 ```kotlin
@@ -915,7 +915,7 @@ import io.reactivex.*
 import kotlinx.coroutines.experimental.*
 import kotlinx.coroutines.experimental.reactive.*
 import io.reactivex.schedulers.Schedulers
-import kotlin.coroutines.experimental.CoroutineContext
+import kotlin.coroutines.CoroutineContext
 -->
 
 ```kotlin

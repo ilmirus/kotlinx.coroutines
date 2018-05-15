@@ -18,7 +18,7 @@
 package guide.sync.example01b
 
 import kotlinx.coroutines.experimental.*
-import kotlin.coroutines.experimental.CoroutineContext
+import kotlin.coroutines.CoroutineContext
 import kotlin.system.measureTimeMillis
 
 suspend fun massiveRun(context: CoroutineContext, action: suspend () -> Unit) {

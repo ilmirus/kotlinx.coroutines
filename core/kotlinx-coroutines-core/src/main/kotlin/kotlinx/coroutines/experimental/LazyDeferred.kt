@@ -16,7 +16,7 @@
 
 package kotlinx.coroutines.experimental
 
-import kotlin.coroutines.experimental.CoroutineContext
+import kotlin.coroutines.CoroutineContext
 
 /**
  * @suppress **Deprecated**: `Deferred` incorporates functionality of `LazyDeferred`. See [Deferred].

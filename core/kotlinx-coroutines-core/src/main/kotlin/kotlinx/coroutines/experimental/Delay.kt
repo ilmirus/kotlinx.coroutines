@@ -20,8 +20,8 @@ import kotlinx.coroutines.experimental.selects.SelectBuilder
 import kotlinx.coroutines.experimental.selects.select
 import java.util.concurrent.Future
 import java.util.concurrent.TimeUnit
-import kotlin.coroutines.experimental.ContinuationInterceptor
-import kotlin.coroutines.experimental.CoroutineContext
+import kotlin.coroutines.ContinuationInterceptor
+import kotlin.coroutines.CoroutineContext
 
 /**
  * This dispatcher _feature_ is implemented by [CoroutineDispatcher] implementations that natively support

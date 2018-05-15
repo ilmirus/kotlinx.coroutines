@@ -25,7 +25,7 @@ import org.hamcrest.core.IsNull
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.junit.runners.Parameterized
-import kotlin.coroutines.experimental.CoroutineContext
+import kotlin.coroutines.CoroutineContext
 
 @RunWith(Parameterized::class)
 class IntegrationTest(

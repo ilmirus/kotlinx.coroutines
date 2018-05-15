@@ -21,11 +21,11 @@ import com.devexperts.dxlab.lincheck.Result
 import com.devexperts.dxlab.lincheck.verifier.Verifier
 import java.lang.reflect.Method
 import java.util.*
-import kotlin.coroutines.experimental.Continuation
-import kotlin.coroutines.experimental.CoroutineContext
-import kotlin.coroutines.experimental.EmptyCoroutineContext
-import kotlin.coroutines.experimental.intrinsics.COROUTINE_SUSPENDED
-import kotlin.coroutines.experimental.intrinsics.startCoroutineUninterceptedOrReturn
+import kotlin.coroutines.Continuation
+import kotlin.coroutines.CoroutineContext
+import kotlin.coroutines.EmptyCoroutineContext
+import kotlin.coroutines.intrinsics.COROUTINE_SUSPENDED
+import kotlin.coroutines.intrinsics.startCoroutineUninterceptedOrReturn
 
 data class OpResult(val name: String, val value: Any?) {
     override fun toString(): String = "$name=$value"

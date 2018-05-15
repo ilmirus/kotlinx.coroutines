@@ -19,7 +19,7 @@
 
 package kotlinx.coroutines.experimental
 
-import kotlin.coroutines.experimental.CoroutineContext
+import kotlin.coroutines.CoroutineContext
 
 expect public interface Job : CoroutineContext.Element {
     public companion object Key : CoroutineContext.Key<Job>

@@ -16,7 +16,7 @@
 
 package kotlinx.coroutines.experimental
 
-import kotlin.coroutines.experimental.Continuation
+import kotlin.coroutines.Continuation
 
 // internal debugging tools
 
