@@ -18,7 +18,7 @@
 package guide.sync.example06
 
 import kotlinx.coroutines.experimental.*
-import kotlin.coroutines.experimental.CoroutineContext
+import kotlin.coroutines.CoroutineContext
 import kotlin.system.measureTimeMillis
 import kotlinx.coroutines.experimental.sync.Mutex
 import kotlinx.coroutines.experimental.sync.withLock

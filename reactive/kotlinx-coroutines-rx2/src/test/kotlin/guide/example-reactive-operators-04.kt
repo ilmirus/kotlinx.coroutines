@@ -20,7 +20,7 @@ package guide.reactive.operators.example04
 import kotlinx.coroutines.experimental.*
 import kotlinx.coroutines.experimental.reactive.*
 import org.reactivestreams.Publisher
-import kotlin.coroutines.experimental.CoroutineContext
+import kotlin.coroutines.CoroutineContext
 
 fun <T> Publisher<Publisher<T>>.merge(context: CoroutineContext) = publish<T>(context) {
   consumeEach { pub ->                 // for each publisher received on the source channel

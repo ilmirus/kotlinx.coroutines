@@ -36,7 +36,7 @@ public open class CompletedExceptionally protected constructor(
      */
     public constructor(cause: Throwable) : this(cause, false)
 
-    @Volatile
+    // @Volatile
     private var _exception: Throwable? = cause // will materialize JobCancellationException on first need
 
     init {

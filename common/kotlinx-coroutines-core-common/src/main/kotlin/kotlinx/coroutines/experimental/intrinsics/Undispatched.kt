@@ -17,8 +17,8 @@
 package kotlinx.coroutines.experimental.intrinsics
 
 import kotlinx.coroutines.experimental.*
-import kotlin.coroutines.experimental.*
-import kotlin.coroutines.experimental.intrinsics.*
+import kotlin.coroutines.*
+import kotlin.coroutines.intrinsics.*
 
 /**
  * Use this function to restart coroutine directly from inside of [suspendCoroutine] in the same context.

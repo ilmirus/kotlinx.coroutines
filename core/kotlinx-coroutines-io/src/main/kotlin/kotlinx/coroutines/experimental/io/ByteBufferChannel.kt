@@ -13,8 +13,8 @@ import kotlinx.io.pool.*
 import java.io.EOFException
 import java.nio.*
 import java.util.concurrent.atomic.*
-import kotlin.coroutines.experimental.*
-import kotlin.coroutines.experimental.intrinsics.*
+import kotlin.coroutines.*
+import kotlin.coroutines.intrinsics.*
 
 internal const val DEFAULT_CLOSE_MESSAGE = "Byte channel was closed"
 

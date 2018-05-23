@@ -23,8 +23,8 @@ import kotlinx.coroutines.experimental.internal.*
 import kotlinx.coroutines.experimental.intrinsics.*
 import kotlinx.coroutines.experimental.sync.*
 import java.util.concurrent.*
-import kotlin.coroutines.experimental.*
-import kotlin.coroutines.experimental.intrinsics.*
+import kotlin.coroutines.*
+import kotlin.coroutines.intrinsics.*
 
 /**
  * Scope for [select] invocation.

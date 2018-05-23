@@ -6,7 +6,7 @@ import kotlinx.coroutines.experimental.Job
 import kotlinx.coroutines.experimental.channels.ReceiveChannel
 import reactor.core.publisher.Flux
 import reactor.core.publisher.Mono
-import kotlin.coroutines.experimental.CoroutineContext
+import kotlin.coroutines.CoroutineContext
 
 /**
  * Converts this job to the hot reactive mono that signals

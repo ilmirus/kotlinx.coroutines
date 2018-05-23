@@ -21,7 +21,7 @@ package kotlinx.coroutines.experimental
 
 import kotlinx.coroutines.experimental.intrinsics.*
 import kotlinx.coroutines.experimental.selects.*
-import kotlin.coroutines.experimental.*
+import kotlin.coroutines.*
 
 /**
  * Deferred value is a non-blocking cancellable future.

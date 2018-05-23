@@ -16,7 +16,7 @@
 
 package kotlinx.coroutines.experimental
 
-import kotlin.coroutines.experimental.*
+import kotlin.coroutines.*
 
 /**
  * Base class that shall be extended by all coroutine dispatcher implementations.

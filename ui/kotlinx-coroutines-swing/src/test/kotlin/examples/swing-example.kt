@@ -21,7 +21,7 @@ import kotlinx.coroutines.experimental.swing.Swing
 import java.text.SimpleDateFormat
 import java.util.*
 import java.util.concurrent.ForkJoinPool
-import kotlin.coroutines.experimental.suspendCoroutine
+import kotlin.coroutines.suspendCoroutine
 
 fun log(msg: String) = println("${SimpleDateFormat("yyyyMMdd-HHmmss.sss").format(Date())} [${Thread.currentThread().name}] $msg")
 

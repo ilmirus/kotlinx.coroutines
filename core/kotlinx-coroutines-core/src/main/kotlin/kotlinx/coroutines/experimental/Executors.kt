@@ -20,7 +20,7 @@ import java.util.concurrent.Executor
 import java.util.concurrent.RejectedExecutionException
 import java.util.concurrent.ScheduledExecutorService
 import java.util.concurrent.TimeUnit
-import kotlin.coroutines.experimental.CoroutineContext
+import kotlin.coroutines.CoroutineContext
 
 /**
  * Converts an instance of [Executor] to an implementation of [CoroutineDispatcher].

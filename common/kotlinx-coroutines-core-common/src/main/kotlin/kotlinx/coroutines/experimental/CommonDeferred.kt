@@ -16,7 +16,7 @@
 
 package kotlinx.coroutines.experimental
 
-import kotlin.coroutines.experimental.CoroutineContext
+import kotlin.coroutines.CoroutineContext
 
 public expect interface Deferred<out T> : Job {
     public val isCompletedExceptionally: Boolean

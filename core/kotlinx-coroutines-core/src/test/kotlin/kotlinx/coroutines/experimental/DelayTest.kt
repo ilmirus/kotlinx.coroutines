@@ -21,10 +21,10 @@ import org.hamcrest.core.IsEqual
 import org.junit.Test
 import java.util.concurrent.Executor
 import java.util.concurrent.Executors
-import kotlin.coroutines.experimental.AbstractCoroutineContextElement
-import kotlin.coroutines.experimental.Continuation
-import kotlin.coroutines.experimental.ContinuationInterceptor
-import kotlin.coroutines.experimental.CoroutineContext
+import kotlin.coroutines.AbstractCoroutineContextElement
+import kotlin.coroutines.Continuation
+import kotlin.coroutines.ContinuationInterceptor
+import kotlin.coroutines.CoroutineContext
 
 class DelayTest : TestBase() {
     /**

@@ -21,7 +21,7 @@ import android.os.Looper
 import android.view.Choreographer
 import kotlinx.coroutines.experimental.*
 import java.util.concurrent.TimeUnit
-import kotlin.coroutines.experimental.CoroutineContext
+import kotlin.coroutines.CoroutineContext
 
 /**
  * Dispatches execution onto Android main UI thread and provides native [delay][Delay.delay] support.

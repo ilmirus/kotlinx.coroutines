@@ -20,7 +20,7 @@ import kotlinx.atomicfu.*
 import kotlinx.coroutines.experimental.internal.*
 import java.util.concurrent.*
 import java.util.concurrent.locks.*
-import kotlin.coroutines.experimental.*
+import kotlin.coroutines.*
 
 /**
  * Implemented by [CoroutineDispatcher] implementations that have event loop inside and can

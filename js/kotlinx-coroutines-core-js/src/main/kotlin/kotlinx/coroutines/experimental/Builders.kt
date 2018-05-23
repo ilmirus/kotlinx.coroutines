@@ -20,8 +20,8 @@
 package kotlinx.coroutines.experimental
 
 import kotlinx.coroutines.experimental.intrinsics.*
-import kotlin.coroutines.experimental.*
-import kotlin.coroutines.experimental.intrinsics.*
+import kotlin.coroutines.*
+import kotlin.coroutines.intrinsics.*
 
 /**
  * Launches new coroutine without blocking current thread and returns a reference to the coroutine as a [Job].

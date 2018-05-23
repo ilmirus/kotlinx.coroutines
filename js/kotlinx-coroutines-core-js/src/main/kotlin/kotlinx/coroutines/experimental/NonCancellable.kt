@@ -17,7 +17,7 @@
 package kotlinx.coroutines.experimental
 
 import kotlinx.coroutines.experimental.NonCancellable.isActive
-import kotlin.coroutines.experimental.AbstractCoroutineContextElement
+import kotlin.coroutines.AbstractCoroutineContextElement
 
 /**
  * A non-cancelable job that is always [active][isActive]. It is designed to be used with [run] builder

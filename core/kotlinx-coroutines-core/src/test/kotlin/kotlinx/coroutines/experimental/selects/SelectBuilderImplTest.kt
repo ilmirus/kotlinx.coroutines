@@ -17,10 +17,10 @@
 package kotlinx.coroutines.experimental.selects
 
 import org.junit.Test
-import kotlin.coroutines.experimental.Continuation
-import kotlin.coroutines.experimental.CoroutineContext
-import kotlin.coroutines.experimental.EmptyCoroutineContext
-import kotlin.coroutines.experimental.intrinsics.COROUTINE_SUSPENDED
+import kotlin.coroutines.Continuation
+import kotlin.coroutines.CoroutineContext
+import kotlin.coroutines.EmptyCoroutineContext
+import kotlin.coroutines.intrinsics.COROUTINE_SUSPENDED
 
 class SelectBuilderImplTest {
     @Test

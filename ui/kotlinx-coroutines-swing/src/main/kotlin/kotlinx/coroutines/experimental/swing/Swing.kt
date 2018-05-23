@@ -25,7 +25,7 @@ import java.awt.event.ActionListener
 import java.util.concurrent.TimeUnit
 import javax.swing.SwingUtilities
 import javax.swing.Timer
-import kotlin.coroutines.experimental.CoroutineContext
+import kotlin.coroutines.CoroutineContext
 
 /**
  * Dispatches execution onto Swing event dispatching thread and provides native [delay] support.

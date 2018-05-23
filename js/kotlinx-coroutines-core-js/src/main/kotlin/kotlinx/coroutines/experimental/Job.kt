@@ -21,9 +21,9 @@ package kotlinx.coroutines.experimental
 
 import kotlinx.coroutines.experimental.internal.LinkedListHead
 import kotlinx.coroutines.experimental.internal.LinkedListNode
-import kotlin.coroutines.experimental.CoroutineContext
-import kotlin.coroutines.experimental.buildSequence
-import kotlin.coroutines.experimental.intrinsics.suspendCoroutineOrReturn
+import kotlin.coroutines.CoroutineContext
+import kotlin.coroutines.buildSequence
+import kotlin.coroutines.intrinsics.suspendCoroutineOrReturn
 
 /**
  * A background job. Conceptually, a job is a cancellable thing with a simple life-cycle that

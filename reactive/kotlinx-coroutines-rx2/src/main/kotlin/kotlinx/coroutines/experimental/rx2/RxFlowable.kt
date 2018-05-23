@@ -23,8 +23,8 @@ import kotlinx.coroutines.experimental.DefaultDispatcher
 import kotlinx.coroutines.experimental.Job
 import kotlinx.coroutines.experimental.channels.ProducerScope
 import kotlinx.coroutines.experimental.reactive.publish
-import kotlin.coroutines.experimental.ContinuationInterceptor
-import kotlin.coroutines.experimental.CoroutineContext
+import kotlin.coroutines.ContinuationInterceptor
+import kotlin.coroutines.CoroutineContext
 
 /**
  * Creates cold [flowable][Flowable] that will run a given [block] in a coroutine.

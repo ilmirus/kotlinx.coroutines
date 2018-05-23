@@ -16,9 +16,9 @@
 
 package kotlinx.coroutines.experimental
 
-import kotlin.coroutines.experimental.CoroutineContext
-import kotlin.coroutines.experimental.intrinsics.COROUTINE_SUSPENDED
-import kotlin.coroutines.experimental.intrinsics.suspendCoroutineOrReturn
+import kotlin.coroutines.CoroutineContext
+import kotlin.coroutines.intrinsics.COROUTINE_SUSPENDED
+import kotlin.coroutines.intrinsics.suspendCoroutineOrReturn
 
 /**
  * Yields a thread (or thread pool) of the current coroutine dispatcher to other coroutines to run.

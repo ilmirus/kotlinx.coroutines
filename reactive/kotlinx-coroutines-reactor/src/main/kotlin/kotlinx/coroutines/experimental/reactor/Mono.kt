@@ -18,7 +18,7 @@ package kotlinx.coroutines.experimental.reactor
 import kotlinx.coroutines.experimental.*
 import reactor.core.*
 import reactor.core.publisher.*
-import kotlin.coroutines.experimental.*
+import kotlin.coroutines.*
 
 /**
  * Creates cold [mono][Mono] that will run a given [block] in a coroutine.

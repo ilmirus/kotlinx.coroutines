@@ -11,7 +11,7 @@ import kotlinx.coroutines.experimental.runBlocking
 import org.openjdk.jmh.annotations.*
 import org.openjdk.jmh.annotations.Scope
 import java.util.concurrent.TimeUnit
-import kotlin.coroutines.experimental.CoroutineContext
+import kotlin.coroutines.CoroutineContext
 
 /*
 

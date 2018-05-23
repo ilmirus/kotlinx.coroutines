@@ -20,10 +20,10 @@
 package kotlinx.coroutines.experimental
 
 import kotlinx.coroutines.experimental.internal.LockFreeLinkedListNode
-import kotlin.coroutines.experimental.Continuation
-import kotlin.coroutines.experimental.CoroutineContext
-import kotlin.coroutines.experimental.intrinsics.suspendCoroutineOrReturn
-import kotlin.coroutines.experimental.suspendCoroutine
+import kotlin.coroutines.Continuation
+import kotlin.coroutines.CoroutineContext
+import kotlin.coroutines.intrinsics.suspendCoroutineOrReturn
+import kotlin.coroutines.suspendCoroutine
 
 // --------------- cancellable continuations ---------------
 

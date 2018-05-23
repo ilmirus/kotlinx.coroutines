@@ -1,9 +1,13 @@
 dependencies {
     testCompile "com.devexperts.lincheck:core:$lincheck_version"
+    compile "org.jetbrains.kotlin:kotlin-stdlib-coroutines:$kotlin_version"
 }
 
 tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile) {
     kotlinOptions.jdkHome = System.env.JDK_16
+    kotlinOptions {
+        languageVersion = "1.3"
+    }
 }
 
 tasks.withType(Test) {

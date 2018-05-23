@@ -17,7 +17,7 @@
 package kotlinx.coroutines.experimental
 
 import kotlin.browser.*
-import kotlin.coroutines.experimental.*
+import kotlin.coroutines.*
 
 /**
  * A coroutine dispatcher that is not confined to any specific thread.

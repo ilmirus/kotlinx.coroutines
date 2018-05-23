@@ -17,10 +17,10 @@
 package kotlinx.coroutines.experimental
 
 import kotlinx.coroutines.experimental.intrinsics.*
-import kotlin.coroutines.experimental.Continuation
-import kotlin.coroutines.experimental.intrinsics.COROUTINE_SUSPENDED
-import kotlin.coroutines.experimental.intrinsics.startCoroutineUninterceptedOrReturn
-import kotlin.coroutines.experimental.intrinsics.suspendCoroutineOrReturn
+import kotlin.coroutines.Continuation
+import kotlin.coroutines.intrinsics.COROUTINE_SUSPENDED
+import kotlin.coroutines.intrinsics.startCoroutineUninterceptedOrReturn
+import kotlin.coroutines.intrinsics.suspendCoroutineOrReturn
 
 /**
  * Runs a given suspending [block] of code inside a coroutine with a specified timeout and throws

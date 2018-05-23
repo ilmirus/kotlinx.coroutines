@@ -18,8 +18,8 @@ package kotlinx.coroutines.experimental.selects
 
 import java.util.*
 import java.util.concurrent.TimeUnit
-import kotlin.coroutines.experimental.Continuation
-import kotlin.coroutines.experimental.intrinsics.suspendCoroutineOrReturn
+import kotlin.coroutines.Continuation
+import kotlin.coroutines.intrinsics.suspendCoroutineOrReturn
 
 /**
  * Waits for the result of multiple suspending functions simultaneously like [select], but in an _unbiased_

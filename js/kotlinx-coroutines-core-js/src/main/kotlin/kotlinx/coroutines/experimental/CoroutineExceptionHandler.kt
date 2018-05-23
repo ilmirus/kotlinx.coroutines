@@ -16,8 +16,8 @@
 
 package kotlinx.coroutines.experimental
 
-import kotlin.coroutines.experimental.AbstractCoroutineContextElement
-import kotlin.coroutines.experimental.CoroutineContext
+import kotlin.coroutines.AbstractCoroutineContextElement
+import kotlin.coroutines.CoroutineContext
 
 /**
  * Helper function for coroutine builder implementations to handle uncaught exception in coroutines.

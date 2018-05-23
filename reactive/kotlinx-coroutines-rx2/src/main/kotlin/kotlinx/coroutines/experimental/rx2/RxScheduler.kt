@@ -22,7 +22,7 @@ import kotlinx.coroutines.experimental.CoroutineDispatcher
 import kotlinx.coroutines.experimental.Delay
 import kotlinx.coroutines.experimental.DisposableHandle
 import java.util.concurrent.TimeUnit
-import kotlin.coroutines.experimental.CoroutineContext
+import kotlin.coroutines.CoroutineContext
 
 /**
  * Converts an instance of [Scheduler] to an implementation of [CoroutineDispatcher]

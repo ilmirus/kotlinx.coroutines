@@ -3,7 +3,7 @@ package kotlinx.coroutines.experimental.android
 import android.support.annotation.*
 import kotlinx.coroutines.experimental.*
 import java.lang.reflect.*
-import kotlin.coroutines.experimental.*
+import kotlin.coroutines.*
 
 private val getter =
     try {

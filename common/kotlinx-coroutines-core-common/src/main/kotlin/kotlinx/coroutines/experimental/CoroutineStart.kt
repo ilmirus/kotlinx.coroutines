@@ -18,7 +18,7 @@ package kotlinx.coroutines.experimental
 
 import kotlinx.coroutines.experimental.CoroutineStart.*
 import kotlinx.coroutines.experimental.intrinsics.*
-import kotlin.coroutines.experimental.*
+import kotlin.coroutines.*
 
 /**
  * Defines start option for coroutines builders.

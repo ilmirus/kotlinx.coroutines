@@ -18,7 +18,7 @@ package kotlinx.coroutines.experimental
 
 import java.util.concurrent.*
 import java.util.concurrent.atomic.AtomicInteger
-import kotlin.coroutines.experimental.CoroutineContext
+import kotlin.coroutines.CoroutineContext
 
 /**
  * Represents common pool of shared threads as coroutine dispatcher for compute-intensive tasks.

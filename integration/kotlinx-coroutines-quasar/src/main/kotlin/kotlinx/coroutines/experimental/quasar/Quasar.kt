@@ -40,9 +40,9 @@ import co.paralleluniverse.strands.SuspendableCallable
 import kotlinx.coroutines.experimental.asCoroutineDispatcher
 import kotlinx.coroutines.experimental.cancelFutureOnCompletion
 import kotlinx.coroutines.experimental.suspendCancellableCoroutine
-import kotlin.coroutines.experimental.Continuation
-import kotlin.coroutines.experimental.CoroutineContext
-import kotlin.coroutines.experimental.startCoroutine
+import kotlin.coroutines.Continuation
+import kotlin.coroutines.CoroutineContext
+import kotlin.coroutines.startCoroutine
 
 /**
  * Runs Quasar-instrumented suspendable code from Kotlin coroutine.

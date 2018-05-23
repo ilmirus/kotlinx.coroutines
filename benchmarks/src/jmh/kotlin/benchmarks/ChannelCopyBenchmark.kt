@@ -5,8 +5,8 @@ import kotlinx.coroutines.experimental.io.*
 import org.openjdk.jmh.annotations.*
 import java.io.*
 import java.util.concurrent.*
-import kotlin.coroutines.experimental.*
-import kotlin.coroutines.experimental.intrinsics.*
+import kotlin.coroutines.*
+import kotlin.coroutines.intrinsics.*
 
 
 /*

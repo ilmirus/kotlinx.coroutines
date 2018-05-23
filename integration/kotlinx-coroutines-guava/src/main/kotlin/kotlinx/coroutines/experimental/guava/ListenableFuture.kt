@@ -21,9 +21,9 @@ import com.google.common.util.concurrent.FutureCallback
 import com.google.common.util.concurrent.Futures
 import com.google.common.util.concurrent.ListenableFuture
 import kotlinx.coroutines.experimental.*
-import kotlin.coroutines.experimental.Continuation
-import kotlin.coroutines.experimental.ContinuationInterceptor
-import kotlin.coroutines.experimental.CoroutineContext
+import kotlin.coroutines.Continuation
+import kotlin.coroutines.ContinuationInterceptor
+import kotlin.coroutines.CoroutineContext
 
 /**
  * Starts new coroutine and returns its results an an implementation of [ListenableFuture].

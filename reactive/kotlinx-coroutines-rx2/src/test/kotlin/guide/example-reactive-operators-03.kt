@@ -20,7 +20,7 @@ package guide.reactive.operators.example03
 import kotlinx.coroutines.experimental.*
 import kotlinx.coroutines.experimental.reactive.*
 import org.reactivestreams.Publisher
-import kotlin.coroutines.experimental.CoroutineContext
+import kotlin.coroutines.CoroutineContext
 import kotlinx.coroutines.experimental.selects.whileSelect
 
 fun <T, U> Publisher<T>.takeUntil(context: CoroutineContext, other: Publisher<U>) = publish<T>(context) {

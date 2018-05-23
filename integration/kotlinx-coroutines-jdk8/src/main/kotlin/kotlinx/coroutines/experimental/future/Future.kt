@@ -22,10 +22,10 @@ import java.util.concurrent.CompletionStage
 import java.util.concurrent.ExecutionException
 import java.util.concurrent.Future
 import java.util.function.BiConsumer
-import kotlin.coroutines.experimental.Continuation
-import kotlin.coroutines.experimental.ContinuationInterceptor
-import kotlin.coroutines.experimental.CoroutineContext
-import kotlin.coroutines.experimental.suspendCoroutine
+import kotlin.coroutines.Continuation
+import kotlin.coroutines.ContinuationInterceptor
+import kotlin.coroutines.CoroutineContext
+import kotlin.coroutines.suspendCoroutine
 
 /**
  * Starts new coroutine and returns its result as an implementation of [CompletableFuture].

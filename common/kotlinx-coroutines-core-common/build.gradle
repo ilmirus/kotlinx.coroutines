@@ -1,0 +1,9 @@
+dependencies {
+    compile "org.jetbrains.kotlin:kotlin-stdlib-common-coroutines:$kotlin_version"
+}
+
+compileKotlinCommon {
+    kotlinOptions {
+        languageVersion = "1.3"
+    }
+}

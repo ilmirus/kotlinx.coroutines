@@ -16,8 +16,8 @@
 
 package kotlinx.coroutines.experimental
 
-import kotlin.coroutines.experimental.ContinuationInterceptor
-import kotlin.coroutines.experimental.CoroutineContext
+import kotlin.coroutines.ContinuationInterceptor
+import kotlin.coroutines.CoroutineContext
 
 /**
  * This dispatcher _feature_ is implemented by [CoroutineDispatcher] implementations that natively support

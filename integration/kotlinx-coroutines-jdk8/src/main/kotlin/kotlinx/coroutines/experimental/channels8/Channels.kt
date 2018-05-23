@@ -27,7 +27,7 @@ import java.util.function.Consumer
 import java.util.stream.Collector
 import java.util.stream.Stream
 import java.util.stream.StreamSupport
-import kotlin.coroutines.experimental.CoroutineContext
+import kotlin.coroutines.CoroutineContext
 
 /**
  * Creates a [ProducerJob] to read all element of the [Stream].

@@ -19,7 +19,7 @@ package guide.reactive.operators.example01
 
 import kotlinx.coroutines.experimental.*
 import kotlinx.coroutines.experimental.reactive.*
-import kotlin.coroutines.experimental.CoroutineContext
+import kotlin.coroutines.CoroutineContext
 
 fun range(context: CoroutineContext, start: Int, count: Int) = publish<Int>(context) {
     for (x in start until start + count) send(x)

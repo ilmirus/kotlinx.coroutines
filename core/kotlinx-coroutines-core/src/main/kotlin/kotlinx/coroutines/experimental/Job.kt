@@ -24,8 +24,8 @@ import kotlinx.coroutines.experimental.internal.*
 import kotlinx.coroutines.experimental.intrinsics.*
 import kotlinx.coroutines.experimental.selects.*
 import java.util.concurrent.*
-import kotlin.coroutines.experimental.*
-import kotlin.coroutines.experimental.intrinsics.*
+import kotlin.coroutines.*
+import kotlin.coroutines.intrinsics.*
 
 // --------------- core job interfaces ---------------
 

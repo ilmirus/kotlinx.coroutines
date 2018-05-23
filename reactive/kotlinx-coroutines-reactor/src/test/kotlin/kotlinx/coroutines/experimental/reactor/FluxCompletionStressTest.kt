@@ -23,7 +23,7 @@ import kotlinx.coroutines.experimental.runBlocking
 import kotlinx.coroutines.experimental.withTimeout
 import org.junit.Test
 import java.util.Random
-import kotlin.coroutines.experimental.CoroutineContext
+import kotlin.coroutines.CoroutineContext
 
 class FluxCompletionStressTest : TestBase() {
     val N_REPEATS = 10_000 * stressTestMultiplier

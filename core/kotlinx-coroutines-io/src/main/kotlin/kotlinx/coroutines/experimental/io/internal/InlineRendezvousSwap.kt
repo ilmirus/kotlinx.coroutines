@@ -1,7 +1,7 @@
 package kotlinx.coroutines.experimental.io.internal
 
 import kotlinx.coroutines.experimental.*
-import kotlin.coroutines.experimental.intrinsics.*
+import kotlin.coroutines.intrinsics.*
 
 /**
  * This is completely similar to [kotlinx.coroutines.experimental.channels.RendezvousChannel] except:

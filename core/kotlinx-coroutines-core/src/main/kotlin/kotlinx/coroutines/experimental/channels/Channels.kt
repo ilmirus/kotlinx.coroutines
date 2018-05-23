@@ -17,7 +17,7 @@
 package kotlinx.coroutines.experimental.channels
 
 import kotlinx.coroutines.experimental.*
-import kotlin.coroutines.experimental.*
+import kotlin.coroutines.*
 
 internal const val DEFAULT_CLOSE_MESSAGE = "Channel was closed"
 

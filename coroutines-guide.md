@@ -789,7 +789,7 @@ Completed in 1085 ms
 ## Coroutine context and dispatchers
 
 Coroutines always execute in some context which is represented by the value of 
-[CoroutineContext](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.coroutines.experimental/-coroutine-context/) 
+[CoroutineContext](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.coroutines/-coroutine-context/) 
 type, defined in the Kotlin standard library.
 
 The coroutine context is a set of various elements. The main elements are the [Job] of the coroutine, 
@@ -802,7 +802,7 @@ the corresponding coroutine uses for its execution. Coroutine dispatcher can con
 to a specific thread, dispatch it to a thread pool, or let it run unconfined. 
 
 All coroutines builders like [launch] and [async] accept an optional 
-[CoroutineContext](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.coroutines.experimental/-coroutine-context/) 
+[CoroutineContext](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.coroutines/-coroutine-context/) 
 parameter that can be used to explicitly specify the dispatcher for new coroutine and other context elements. 
 
 Try the following example:
@@ -1395,7 +1395,7 @@ explicit `context` parameter and pass it to [produce] builder,
 so that caller can control where our coroutines run:
  
 <!--- INCLUDE core/kotlinx-coroutines-core/src/test/kotlin/guide/example-channel-05.kt  
-import kotlin.coroutines.experimental.CoroutineContext
+import kotlin.coroutines.CoroutineContext
 -->
  
 ```kotlin
@@ -1425,7 +1425,7 @@ The following example prints the first ten prime numbers,
 running the whole pipeline in the context of the main thread. Since all the coroutines are launched as
 children of the main [runBlocking] coroutine in its [coroutineContext][CoroutineScope.coroutineContext],
 we don't have to keep an explicit list of all the coroutine we have started. 
-We use [cancelChildren][kotlin.coroutines.experimental.CoroutineContext.cancelChildren] 
+We use [cancelChildren][kotlin.coroutines.CoroutineContext.cancelChildren] 
 extension function to cancel all the children coroutines. 
 
 ```kotlin
@@ -1460,7 +1460,7 @@ The output of this code is:
 <!--- TEST -->
 
 Note, that you can build the same pipeline using 
-[`buildIterator`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.coroutines.experimental/build-iterator.html) 
+[`buildIterator`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.coroutines/build-iterator.html) 
 coroutine builder from the standard library. 
 Replace `produce` with `buildIterator`, `send` with `yield`, `receive` with `next`, 
 `ReceiveChannel` with `Iterator`, and get rid of the context. You will not need `runBlocking` either.
@@ -1681,7 +1681,7 @@ Let us launch a thousand coroutines all doing the same action thousand times (fo
 We'll also measure their completion time for further comparisons:
 
 <!--- INCLUDE .*/example-sync-([0-9a-z]+).kt
-import kotlin.coroutines.experimental.CoroutineContext
+import kotlin.coroutines.CoroutineContext
 import kotlin.system.measureTimeMillis
 -->
 
@@ -2000,7 +2000,7 @@ import kotlinx.coroutines.experimental.selects.*
 Let us have two producers of strings: `fizz` and `buzz`. The `fizz` produces "Fizz" string every 300 ms:
 
 <!--- INCLUDE .*/example-select-01.kt
-import kotlin.coroutines.experimental.CoroutineContext
+import kotlin.coroutines.CoroutineContext
 -->
 
 ```kotlin
@@ -2149,7 +2149,7 @@ Let us write an example of producer of integers that sends its values to a `side
 the consumers on its primary channel cannot keep up with it:
 
 <!--- INCLUDE
-import kotlin.coroutines.experimental.CoroutineContext
+import kotlin.coroutines.CoroutineContext
 -->
 
 ```kotlin
@@ -2372,7 +2372,7 @@ Channel was closed
 [newCoroutineContext]: https://kotlin.github.io/kotlinx.coroutines/kotlinx-coroutines-core/kotlinx.coroutines.experimental/new-coroutine-context.html
 [CoroutineName]: https://kotlin.github.io/kotlinx.coroutines/kotlinx-coroutines-core/kotlinx.coroutines.experimental/-coroutine-name/index.html
 [Job()]: https://kotlin.github.io/kotlinx.coroutines/kotlinx-coroutines-core/kotlinx.coroutines.experimental/-job.html
-[kotlin.coroutines.experimental.CoroutineContext.cancelChildren]: https://kotlin.github.io/kotlinx.coroutines/kotlinx-coroutines-core/kotlinx.coroutines.experimental/kotlin.coroutines.experimental.-coroutine-context/cancel-children.html
+[kotlin.coroutines.CoroutineContext.cancelChildren]: https://kotlin.github.io/kotlinx.coroutines/kotlinx-coroutines-core/kotlinx.coroutines.experimental/kotlin.coroutines.-coroutine-context/cancel-children.html
 [CompletableDeferred]: https://kotlin.github.io/kotlinx.coroutines/kotlinx-coroutines-core/kotlinx.coroutines.experimental/-completable-deferred/index.html
 [Deferred.onAwait]: https://kotlin.github.io/kotlinx.coroutines/kotlinx-coroutines-core/kotlinx.coroutines.experimental/-deferred/on-await.html
 <!--- INDEX kotlinx.coroutines.experimental.sync -->

@@ -18,7 +18,7 @@ package kotlinx.coroutines.experimental
 
 import kotlinx.coroutines.experimental.NonCancellable.isActive
 import kotlinx.coroutines.experimental.selects.SelectClause0
-import kotlin.coroutines.experimental.AbstractCoroutineContextElement
+import kotlin.coroutines.AbstractCoroutineContextElement
 
 /**
  * A non-cancelable job that is always [active][isActive]. It is designed for [withContext] function

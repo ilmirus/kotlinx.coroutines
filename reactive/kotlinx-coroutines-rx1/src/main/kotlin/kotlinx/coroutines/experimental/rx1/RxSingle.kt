@@ -18,7 +18,7 @@ package kotlinx.coroutines.experimental.rx1
 
 import kotlinx.coroutines.experimental.*
 import rx.*
-import kotlin.coroutines.experimental.*
+import kotlin.coroutines.*
 
 /**
  * Creates cold [Single] that runs a given [block] in a coroutine.

@@ -20,7 +20,7 @@ package guide.reactive.operators.example02
 import kotlinx.coroutines.experimental.*
 import kotlinx.coroutines.experimental.reactive.*
 import org.reactivestreams.Publisher
-import kotlin.coroutines.experimental.CoroutineContext
+import kotlin.coroutines.CoroutineContext
 
 fun <T, R> Publisher<T>.fusedFilterMap(
     context: CoroutineContext,   // the context to execute this coroutine in

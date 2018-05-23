@@ -18,7 +18,7 @@
 package guide.sync.example03
 
 import kotlinx.coroutines.experimental.*
-import kotlin.coroutines.experimental.CoroutineContext
+import kotlin.coroutines.CoroutineContext
 import kotlin.system.measureTimeMillis
 import java.util.concurrent.atomic.AtomicInteger
 

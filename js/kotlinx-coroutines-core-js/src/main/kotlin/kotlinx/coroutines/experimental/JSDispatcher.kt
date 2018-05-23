@@ -16,7 +16,7 @@
 
 package kotlinx.coroutines.experimental
 
-import kotlin.coroutines.experimental.*
+import kotlin.coroutines.*
 import org.w3c.dom.*
 
 internal class NodeDispatcher : CoroutineDispatcher(), Delay {

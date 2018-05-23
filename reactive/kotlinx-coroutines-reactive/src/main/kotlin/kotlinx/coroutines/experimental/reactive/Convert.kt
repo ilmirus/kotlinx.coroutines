@@ -19,7 +19,7 @@ package kotlinx.coroutines.experimental.reactive
 import kotlinx.coroutines.experimental.DefaultDispatcher
 import kotlinx.coroutines.experimental.channels.ReceiveChannel
 import org.reactivestreams.Publisher
-import kotlin.coroutines.experimental.CoroutineContext
+import kotlin.coroutines.CoroutineContext
 
 /**
  * Converts a stream of elements received from the channel to the hot reactive publisher.

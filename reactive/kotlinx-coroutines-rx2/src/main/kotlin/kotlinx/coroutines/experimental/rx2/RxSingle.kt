@@ -19,7 +19,7 @@ package kotlinx.coroutines.experimental.rx2
 import io.reactivex.*
 import io.reactivex.functions.*
 import kotlinx.coroutines.experimental.*
-import kotlin.coroutines.experimental.*
+import kotlin.coroutines.*
 
 /**
  * Creates cold [single][Single] that will run a given [block] in a coroutine.

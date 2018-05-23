@@ -16,7 +16,7 @@
 
 package kotlinx.coroutines.experimental
 
-import kotlin.coroutines.experimental.CoroutineContext
+import kotlin.coroutines.CoroutineContext
 
 /**
  * Receiver interface for generic coroutine builders, so that the code inside coroutine has a convenient access

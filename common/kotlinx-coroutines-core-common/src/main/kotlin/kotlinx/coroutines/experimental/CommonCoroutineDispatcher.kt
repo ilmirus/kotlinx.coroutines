@@ -16,7 +16,7 @@
 
 package kotlinx.coroutines.experimental
 
-import kotlin.coroutines.experimental.*
+import kotlin.coroutines.*
 
 public expect abstract class CoroutineDispatcher constructor() : AbstractCoroutineContextElement, ContinuationInterceptor {
     public open fun isDispatchNeeded(context: CoroutineContext): Boolean

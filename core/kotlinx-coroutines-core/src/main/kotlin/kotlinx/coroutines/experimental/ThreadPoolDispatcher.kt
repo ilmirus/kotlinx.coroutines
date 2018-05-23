@@ -20,7 +20,7 @@ import java.io.Closeable
 import java.util.concurrent.Executors
 import java.util.concurrent.ScheduledExecutorService
 import java.util.concurrent.atomic.AtomicInteger
-import kotlin.coroutines.experimental.CoroutineContext
+import kotlin.coroutines.CoroutineContext
 
 /**
  * Creates new coroutine execution context with the a single thread and built-in [yield] and [delay] support.
