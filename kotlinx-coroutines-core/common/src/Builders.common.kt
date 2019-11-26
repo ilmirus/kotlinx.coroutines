@@ -11,6 +11,9 @@ import kotlinx.atomicfu.*
 import kotlinx.coroutines.internal.*
 import kotlinx.coroutines.intrinsics.*
 import kotlinx.coroutines.selects.*
+import kotlin.contracts.ExperimentalContracts
+import kotlin.contracts.InvocationKind
+import kotlin.contracts.contract
 import kotlin.coroutines.*
 import kotlin.coroutines.intrinsics.*
 import kotlin.jvm.*
@@ -131,34 +134,38 @@ private class LazyDeferredCoroutine<T>(
  * in which `withContext` was invoked, is cancelled by the time its dispatcher starts to execute the code,
  * it discards the result of `withContext` and throws [CancellationException].
  */
+@UseExperimental(ExperimentalContracts::class)
 public suspend fun <T> withContext(
     context: CoroutineContext,
     block: suspend CoroutineScope.() -> T
-): T = suspendCoroutineUninterceptedOrReturn sc@ { uCont ->
-    // compute new context
-    val oldContext = uCont.context
-    val newContext = oldContext + context
-    // always check for cancellation of new context
-    newContext.checkCompletion()
-    // FAST PATH #1 -- new context is the same as the old one
-    if (newContext === oldContext) {
-        val coroutine = ScopeCoroutine(newContext, uCont)
-        return@sc coroutine.startUndispatchedOrReturn(coroutine, block)
-    }
-    // FAST PATH #2 -- the new dispatcher is the same as the old one (something else changed)
-    // `equals` is used by design (see equals implementation is wrapper context like ExecutorCoroutineDispatcher)
-    if (newContext[ContinuationInterceptor] == oldContext[ContinuationInterceptor]) {
-        val coroutine = UndispatchedCoroutine(newContext, uCont)
-        // There are changes in the context, so this thread needs to be updated
-        withCoroutineContext(newContext, null) {
+): T {
+    contract { callsInPlace(block, InvocationKind.EXACTLY_ONCE) }
+    return suspendCoroutineUninterceptedOrReturn sc@ { uCont ->
+        // compute new context
+        val oldContext = uCont.context
+        val newContext = oldContext + context
+        // always check for cancellation of new context
+        newContext.checkCompletion()
+        // FAST PATH #1 -- new context is the same as the old one
+        if (newContext === oldContext) {
+            val coroutine = ScopeCoroutine(newContext, uCont)
             return@sc coroutine.startUndispatchedOrReturn(coroutine, block)
         }
+        // FAST PATH #2 -- the new dispatcher is the same as the old one (something else changed)
+        // `equals` is used by design (see equals implementation is wrapper context like ExecutorCoroutineDispatcher)
+        if (newContext[ContinuationInterceptor] == oldContext[ContinuationInterceptor]) {
+            val coroutine = UndispatchedCoroutine(newContext, uCont)
+            // There are changes in the context, so this thread needs to be updated
+            withCoroutineContext(newContext, null) {
+                return@sc coroutine.startUndispatchedOrReturn(coroutine, block)
+            }
+        }
+        // SLOW PATH -- use new dispatcher
+        val coroutine = DispatchedCoroutine(newContext, uCont)
+        coroutine.initParentJob()
+        block.startCoroutineCancellable(coroutine, coroutine)
+        coroutine.getResult()
     }
-    // SLOW PATH -- use new dispatcher
-    val coroutine = DispatchedCoroutine(newContext, uCont)
-    coroutine.initParentJob()
-    block.startCoroutineCancellable(coroutine, coroutine)
-    coroutine.getResult()
 }
 
 /**

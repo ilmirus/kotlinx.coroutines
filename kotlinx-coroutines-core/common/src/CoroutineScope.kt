@@ -6,6 +6,9 @@ package kotlinx.coroutines
 
 import kotlinx.coroutines.internal.*
 import kotlinx.coroutines.intrinsics.*
+import kotlin.contracts.ExperimentalContracts
+import kotlin.contracts.InvocationKind
+import kotlin.contracts.contract
 import kotlin.coroutines.*
 import kotlin.coroutines.intrinsics.*
 
@@ -171,11 +174,14 @@ public object GlobalScope : CoroutineScope {
  * or may throw a corresponding unhandled [Throwable] if there is any unhandled exception in this scope
  * (for example, from a crashed coroutine that was started with [launch][CoroutineScope.launch] in this scope).
  */
-public suspend fun <R> coroutineScope(block: suspend CoroutineScope.() -> R): R =
-    suspendCoroutineUninterceptedOrReturn { uCont ->
+@UseExperimental(ExperimentalContracts::class)
+public suspend fun <R> coroutineScope(block: suspend CoroutineScope.() -> R): R {
+    contract { callsInPlace(block, InvocationKind.EXACTLY_ONCE) }
+    return suspendCoroutineUninterceptedOrReturn { uCont ->
         val coroutine = ScopeCoroutine(uCont.context, uCont)
         coroutine.startUndispatchedOrReturn(coroutine, block)
     }
+}
 
 /**
  * Creates a [CoroutineScope] that wraps the given coroutine [context].
